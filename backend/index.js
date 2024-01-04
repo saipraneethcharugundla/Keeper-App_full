@@ -6,7 +6,7 @@ const cors=require("cors");
 const UserModel=require("./models/Users");
 app.use(express.json());
 app.use(cors());
-mongoose.connect("mongodb+srv://sai16111611:Sai161116111611@cluster0.kze9wum.mongodb.net/",{dbName:"GoogleKeep"});
+mongoose.connect("<----connection string-------->",{dbName:"GoogleKeep"});
 
 app.get("/getUsers",(req,res)=>{
     console.log("hello");
